@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--External Over-Ride CSS File -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--Google Fonts Link-->
+	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+</head>
+
+<body>
+ 	<div class="container">
+		<!--Crystal Collector Jumbotron-->
+		<div class="jumbotron">
+			<div class="container">
+  				<h1 class="text-center"><strong>Crystal Collector</strong></h1>
+			</div>
+		</div>
+
+		<!-- Instructions -->
+		<div class="row">
+			<!--Instructions Container Going All Across the Entire Screen-->
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Instructions</strong></h3>
+  					</div>
+  					<div class="panel-body text-center">
+    					<p>You will be given a random number at the start of the game.<br>There are four crystals below.<br> By clicking on a crystal you will add a specific amount of points to your total score.<br> 
+    					<strong> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br></strong> The value of each crystal is hidden from you until you click on it.<br> Each time when the game starts, the game will change the values of each crystal<br></p>
+  					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!--Scores and Crystals -->
+		<div class="row">
+
+			<!-- Target Score -->
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Target Score</strong></h3>
+  					</div>
+  					<div class="panel-body">
+    					<h3 class="text-center" id="targetScore"><strong>78</strong></h3>
+  					</div>
+				</div>
+				
+			</div>
+
+			<!-- Your Score-->
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Your Score</strong></h3>
+  					</div>
+  					<div class="panel-body">
+    					<h3 class="text-center" id="yourScore"><strong>0</strong></h3>
+  					</div>
+				</div>	
+			</div>
+			
+			<!--Crystals Section with Visuals-->
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Crystal Selection</strong></h3>
+  					</div>
+  					<div class="panel-body text-center" id="crystal-visuals">
+  					<!--Note: to change size of images resize them to fit grid rather than use CSS or Bootstrap to avoid !important in CSS statement-->
+  						<img src="assets/images/blue.png"   alt="" id="blue">
+  						<img src="assets/images/green.png"  alt="" id="green">
+  						<img src="assets/images/red.png"    alt="" id="red">
+  						<img src="assets/images/yellow.png" alt="" id="yellow">
+  					</div>
+				</div>
+
+		</div>
+
+		<!-- Counters Row -->
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Win Count</strong></h3>
+  					</div>
+  					<div class="panel-body">
+    					<h3 class="text-center"><strong>0</strong></h3>
+  					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+  					<div class="panel-heading">
+    					<h3 class="panel-title text-center"><strong>Loss Count</strong></h3>
+  					</div>
+  					<div class="panel-body">
+    					<h3 class="text-center"><strong>0</strong></h3>
+  					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<!-- Linking jQuery always before the JavaScript "script" -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  	crossorigin="anonymous"></script>
+
+	<!-- Google JavaScript script source placing for why/how reasoning of placement on bottom of HTML-->
+	<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

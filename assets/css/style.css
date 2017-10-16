@@ -1,0 +1,33 @@
+/* Set Font to on Body */
+body {
+	font-family: font-family: 'Anton', sans-serif;
+	color: black;
+}
+
+
+/* Jumbotron Style, Over-ride, for cover background image inside jumbotron*/
+.jumbotron {
+	margin-top: 20px;
+	background-image: url("https://i.ytimg.com/vi/BWxMuQre3R8/maxresdefault.jpg");
+	background-size: cover;
+	color: white;
+}
+h1 {
+	font-family: 'Cinzel', serif;
+}
+
+/*Instruction Panel Header Custom Background Color */
+.panel-heading {
+  	background-image: url("https://i.ytimg.com/vi/BWxMuQre3R8/maxresdefault.jpg");
+}
+/* Instruction Panel Header Text Changed to White*/
+.panel-title {
+	color: white;
+}
+
+
+
+
+
+
+
